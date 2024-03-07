@@ -91,7 +91,7 @@ span {
     background:#e2e2e2;
     padding: 30px 120px;
     width: 750px;
-    height: 1250px;
+    height: 1000px;
     position: absolute;
     top: 75%;
     left: 50%;
@@ -100,7 +100,7 @@ span {
     border-radius: 20px;
 }
 
-.signup-box h1 {
+.signup-box h3 {
     font-size: 40px;
     margin-bottom: 1rem;
     margin-top: 0.5rem;
@@ -181,6 +181,20 @@ span {
     padding-right: 252px;
     margin-bottom: 4px;
     margin-top: 15px;
+}
+
+.field h3 {
+    font-size: 16px;
+    padding-right: 282px;   /* Padding depends on number of chars in string */
+    margin-bottom: 4px;
+    margin-top: 15px;
+} 
+
+.signup-box .field input {
+    width: 70%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
 }
 
 .signup-box .confirmPassword input {
@@ -272,7 +286,7 @@ input[type="password"] {
 
 .signup-box .btn{
     width: 40%;
-    height: 45%;
+    height: 5%;
     background: rgb(185, 185, 185);
     border:2px solid #060606;
     outline: none;
@@ -280,7 +294,7 @@ input[type="password"] {
     padding: 10px 0;
     font-size: 20px;
     margin-bottom: 1.5rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
     cursor: pointer;
     font-weight: 600;
 }

@@ -252,9 +252,7 @@ const HomeIndex = () => {
   };
 
 
-    //2 options:
-    //1- Set post.id in webpage, transfer webpages. Currently, too many renders so it fails
-    //2- Have post details be a pop-up since data is already all here. 
+
     const [viewingPost, setViewingPost] = useState(false);
     const [currentPost, setCurrentPost] = useState(-1);
     const [currentPostId, setCurrentPostId] = useState(-1);
@@ -274,7 +272,7 @@ const HomeIndex = () => {
       setCurrentPostId(id);
       var href = "/CarInfo/" + id;
       window.location=href;
-    }
+    }   
   
     //Pulling and Showing Posts from Database Section
   

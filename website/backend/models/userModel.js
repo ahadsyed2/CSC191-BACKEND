@@ -19,6 +19,18 @@ const userSchema = new Schema({
             type: String,
             required: true
 
+        },
+
+        field:{
+            type: String,
+            required: false
+
+        },
+
+        field2:{
+            type: String,
+            required: false
+
         }
 
 
@@ -26,7 +38,7 @@ const userSchema = new Schema({
 
 //STATIC SIGN UP 
 //function fires from userController
-userSchema.statics.signup = async function(email,password)  {
+userSchema.statics.signup = async function(email,password,field,field2)  {
 
     //validation
     //if no email or password
@@ -55,7 +67,7 @@ userSchema.statics.signup = async function(email,password)  {
      const hash = await bcrypt.hash(password,salt)
 
      //create user w email and hashed password
-     const user = await this.create({email, password: hash})
+     const user = await this.create({email, password: hash, field, field2})
 
      //return user back to controller signupUser
      return user 
@@ -63,7 +75,7 @@ userSchema.statics.signup = async function(email,password)  {
 }
 
 //STATIC LOGIN METHOD
-userSchema.statics.login = async function (email,password) {
+userSchema.statics.login = async function (email,password,field,field2) {
 
     //validation
     if (!email || !password) {
