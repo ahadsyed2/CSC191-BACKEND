@@ -531,6 +531,7 @@ input[type="text"] {
   display: flex; 
   align-items: center; 
   justify-content: center;
+  margin-top: 100px;
 }
 
 .link-with-arrow {
@@ -567,4 +568,7 @@ input[type="text"] {
 
 .viewPostTextDisplay {
   background-color: lightcoral;
+}
+
+.test2 {
 }
